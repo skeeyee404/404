@@ -67,8 +67,8 @@ except Exception as e:
     print(f"❌ Hata: {e}")
 
 async def main():
-tasks = [run_bot(token) for token in TOKENS]
-await asyncio.gather(*tasks)
+    tasks = [run_bot(token) for token in TOKENS]
+    await asyncio.gather(*tasks)
 
-if **name** == "**main**":
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())
