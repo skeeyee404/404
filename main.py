@@ -25,7 +25,6 @@ async def run_bot(token):
     intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
-```
 async def status_task():
     await client.wait_until_ready()
     messages = itertools.cycle(STATUS_MESSAGES)
@@ -66,7 +65,6 @@ except discord.errors.LoginFailure:
     print("❌ Geçersiz token")
 except Exception as e:
     print(f"❌ Hata: {e}")
-```
 
 async def main():
 tasks = [run_bot(token) for token in TOKENS]
