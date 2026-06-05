@@ -22,7 +22,7 @@ STATUS_MESSAGES = [
 ]
 
 async def run_bot(token):
-intents = discord.Intents.default()
+    intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
 ```
