@@ -7,7 +7,8 @@ TOKENS = [
     os.getenv("TOKEN1"),
     os.getenv("TOKEN2"),
     os.getenv("TOKEN3"),
-    os.getenv("TOKEN4")
+    os.getenv("TOKEN4"),
+    os.getenv("TOKEN5")
 ]
 
 TOKENS = [token for token in TOKENS if token]
